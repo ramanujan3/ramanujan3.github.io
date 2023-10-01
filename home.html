@@ -1,0 +1,768 @@
+<html lang="en">
+    <head>
+
+       <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="description" content="Scientist">
+		<meta name="keywords" content="Deep Learning, Big Data, Spiking, Sparse Coding, Cholinergic, Adpative, Resonance, Learning">
+		<meta name="author" content="Jesse Palma">
+		<title>Jesse T Palma, Scientist</title>
+		<link rel="stylesheet" href="demo.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="demo-print.css" type="text/css" media="print">
+        <style type="text/css" media="screen">
+            #canvas {
+                height: 250px;
+                left: 50%;
+                margin: -50px 0 0 -340px;
+                position: absolute;
+                top: 20%;
+                width: 800px;
+            }
+            #header {
+                height: 100px;
+                left: 50%;
+                margin: -50px 0 0 -340px;
+                overflow: auto;
+                position: absolute;
+                top: 12%;
+                width: 800px;
+            }
+            #paper {
+                height: 300px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 800px;
+            }
+            #home, #research, #documents, #motivations, #modeling, #design, #connections, #CV {
+                display: none;
+                height: 930px;
+                left: 50%;
+                margin: 15px 0 0 -345px;
+                overflow: auto;
+                position: absolute;
+                top: 28%;
+                width: 680px;
+            }
+            h2 {
+                text-align: center;
+            }
+        </style>
+        <script src="file:///home/jesto/Documents/raphael-2.3.0/raphael.js" type="text/javascript" charset="utf-8"></script>
+
+        <script type="text/javascript" charset="utf-8">
+        window.onload = function () {
+            var R = Raphael("paper", 800, 400);
+            var attr = {
+                fill: "#BBB",
+                stroke: "#000",
+                "stroke-width": 2.5,
+                "stroke-linejoin": "round"
+            };
+            var attrT = {
+                fill: "#666",
+                "font-family": "Verdana",
+                "font-size": "18pt"
+            };
+            var attrTb = {
+                fill: "#666",
+                "font-family": "Verdana",
+                "font-size": "16pt"
+            };
+            var attrT2 = {
+                fill: "#000",
+                "font-family": "Verdana",
+                "font-size": "11pt",
+                "stroke-width": 3
+            };
+            var attrA = {
+                fill: "#AAA",
+                stroke: "#666",
+                "stroke-width": 1,
+                "stroke-linejoin": "round"
+            };
+            var attrInvis = {
+                fill: "#EEE",
+                stroke: "#EEE"
+            };
+
+			var A1 = R.set();
+            var A2 = R.set();
+            var A3 = R.set();
+			var A4 = R.set();
+            var A5 = R.set();
+            var A6 = R.set();
+			var A7 = R.set();
+            var A8 = R.set();
+            A1.push(R.path("M 335 65 L 340 60 L 345 65 L 340 50 z").attr(attrA),
+          				R.path("M 340 60 L 340 115").attr(attrA));
+            A2.push(R.path("M 335 65 L 340 60 L 345 65 L 340 50 z").attr(attrA),
+          				R.path("M 340 60 L 340 115").attr(attrA));
+			A3.push(R.path("M 335 65 L 340 60 L 345 65 L 340 50 z").attr(attrA),
+          				R.path("M 340 60 L 340 115").attr(attrA));
+
+         	A4A = R.path("M 335 265 L 340 260 L 345 265 L 340 250 z").attr(attrA);
+            A4B = R.path("M 340 260 L 340 275").attr(attrA);
+            A4.push(A4A,A4B);
+            A4A.animate({path: "M 335 195 L 340 190 L 345 195 L 340 180 z"}, 4200);
+            A4B.animate({path: "M 340 190 L 340 275"}, 4200);
+
+
+          	A6A = R.path("M 350 145 L 345 150 L 350 155 L 335 150 z").attr(attrA);
+            A6B = R.path("M 345 150 L 355 150").attr(attrA);
+            A6.push(A6A,A6B);
+            A6A.animate({path: "M 250 145 L 245 150 L 250 155 L 235 150 z"}, 2800);
+            A6B.animate({path: "M 245 150 L 315 150"}, 2800);
+
+
+          	A7A = R.path("M 330 145 L 335 150 L 330 155 L 345 150 z").attr(attrA);
+            A7B = R.path("M 335 150 L 325 150").attr(attrA);
+            A7.push(A7A,A7B);
+            A7A.animate({path: "M 430 145 L 435 150 L 430 155 L 445 150 z"}, 2800);
+            A7B.animate({path: "M 435 150 L 365 150"}, 2800);
+
+
+            A5A = R.path("M 310 145 L 305 150 L 310 155 L 295 150 z").attr(attrA);
+            A5B = R.path("M 305 150 L 315 150").attr(attrA);
+            A5.push(A5A,A5B);
+            A5A.animate({path: "M 110 145 L 105 150 L 110 155 L 95 150 z"}, 3050);
+            A5B.animate({path: "M 105 150 L 175 150"}, 3050);
+
+          	A8A = R.path("M 370 145 L 375 150 L 370 155 L 385 150 z").attr(attrA);
+            A8B = R.path("M 375 150 L 365 150").attr(attrA);
+            A8.push(A8A, A8B);
+			A8A.animate({path: "M 570 145 L 575 150 L 570 155 L 585 150 z"}, 3050);
+			A8B.animate({path: "M 575 150 L 505 150"}, 3050);
+
+          	A2.animate({rotation: "36, 340, 115"}, 2000);
+			A3.animate({rotation: "-36, 340, 115"}, 2000);
+
+            var networkDiag = {};
+            networkDiag.research = R.circle(340, 150, 21).attr(attr);
+            networkDiag.research.animate({cx: 60, cy: 150, easing: "<>"}, 2000);
+            networkDiag.research.animate({fill: "#EEE"}, 2000);
+            networkDiag.design = R.circle(340, 150, 21).attr(attr);
+            networkDiag.design.animate({fill: "#EEE"}, 2000);
+            networkDiag.design.animate({cx: 620, cy: 150, easing: "<>"}, 2000);
+            networkDiag.documents = R.circle(340, 150, 21).attr(attr);
+            networkDiag.documents.animate({cx: 200, cy: 150, easing: "<>"}, 2000);
+            networkDiag.modeling = R.circle(340, 150, 21).attr(attr);
+            networkDiag.modeling.animate({cx: 480, cy: 150, easing: "<>"}, 2000);
+            networkDiag.motivations = R.circle(340, 150, 24).attr(attr);
+            networkDiag.motivations.animate({fill: "#777"}, 2000);
+            networkDiag.CV = R.circle(340, 285, 15).attr(attr);
+			networkDiag.CV.attr({"stroke-width": 1.5});
+			networkDiag.home = R.circle(30, 40, 12).attr(attr);
+			networkDiag.home.attr({"stroke-width": 1.5});
+
+			var networkText = {};
+            networkText.home = R.text(30, 80, "About");
+            networkText.home.attr(attrT);
+			networkText.research = R.text(340, 200, "Math &");
+            networkText.research.animate({x: 60, y: 200, easing: "<>"}, 2000);
+            networkText.research.attr(attrT);
+			networkText.researchB = R.text(65, 220, "GAMES");
+			networkText.researchB.attr(attrT2);
+			networkText.researchB.hide();
+			networkText.documents = R.text(340, 200, "AI &");
+			networkText.documents.animate({x: 200, y: 200, easing: "<>"}, 2000);
+            networkText.documents.attr(attrT);
+			networkText.documentsB = R.text(200, 220, "MACHINE LEARNING");
+			networkText.documentsB.attr(attrT2);
+			networkText.documentsB.hide();
+			networkText.motivations = R.text(342, 208, "Motivations");
+			networkText.motivations.attr(attrT);
+			networkText.motivationsB = R.text(340, 228, " ");
+			networkText.motivationsB.attr(attrT2);
+			networkText.motivationsB.hide();
+			networkText.modeling = R.text(340, 200, "Neural Nets &");
+			networkText.modeling.animate({x: 480, y: 200, easing: "<>"}, 2000);
+            networkText.modeling.attr(attrTb);
+			networkText.modelingB = R.text(480, 220, "BRAIN & MIND");
+			networkText.modelingB.attr(attrT2);
+			networkText.modelingB.hide();
+			networkText.design = R.text(340, 200, "Language & ");
+			networkText.design.animate({x: 620, y: 200, easing: "<>"}, 2000);
+            networkText.design.attr(attrTb);
+			networkText.designB = R.text(620, 220, "PERSPECTIVE");
+			networkText.designB.attr(attrT2);
+			networkText.designB.hide();
+			networkText.CV = R.text(340, 325, "CV");
+			networkText.CV.attr(attrT);
+			networkText.connections = R.text(340, 8, "Connections");
+			networkText.connections.attr(attrT);
+
+			networkDiag.home.attr(attrInvis);
+			networkText.home.hide();
+			networkDiag.home.hide();
+
+			networkDiag.connections = R.set();
+            networkDiag.connections = R.circle(340, 30, 9);
+            networkDiag.connections.B = R.circle(315, 33, 9);
+            networkDiag.connections.C = R.circle(292, 41, 9);
+            networkDiag.connections.D = R.circle(365, 33, 9);
+            networkDiag.connections.E = R.circle(388, 41, 9);
+			networkDiag.connections.attr(attr);
+			networkDiag.connections.attr({"stroke-width": 1.5});
+
+
+            var current = null;
+            var active = "home";
+            document.getElementById(active).style.display = "block";
+            document.getElementById("home").style.top = "49%";
+            document.getElementById("home").style.height = "300px";
+            for (var state in networkDiag) {
+                networkDiag[state].color = "#B22";
+                networkText[state].color = "#000";
+                (function (st, state) {
+                    st[0].style.cursor = "pointer";
+                    st[0].onmouseover = function () {
+                        current && (networkDiag[current].animate({fill: "#CCC", stroke: "#000"}, 500));
+                        networkText[state].attr({fill: "#311"});
+                        networkText[state+"B"] && networkText[state+"B"].show();
+                        st.animate({fill: st.color, stroke: "#BBB"}, 500);
+                        st.toFront();
+                        <!-- R.safari(); -->
+                        current = state;
+                    };
+                    st[0].onmouseout = function () {
+                        networkText[state].attr({fill: "#666"});
+                        networkText[state+"B"] && networkText[state+"B"].hide();
+                        st.animate({fill: "#CCC", stroke: "#000"}, 500);
+                        st.toFront();
+                        <!-- R.safari(); -->
+                    };
+                    st[0].onclick = function () {
+                        active && (document.getElementById(active).style.display = "");
+                        current && (networkDiag[current].animate({fill: "#BBB", stroke: "#000"}, 500));
+                        st.animate({fill: "#696", stroke: "#000"}, 500);
+                        st.toFront();
+                        <!-- R.safari(); -->
+                        document.getElementById(state).style.display = "block";
+                        active = state;
+
+                        if(state == "home") {
+							networkText.research.animate({x: 60, y: 200, easing: "<>"}, 1000);
+							networkText.researchB.animate({x: 65, y: 220, easing: "<>"}, 1000);
+							networkDiag.research.animate({cx: 60, cy: 150, easing: "<>"}, 1000);
+							networkText.documents.animate({x: 200, y: 200, easing: "<>"}, 1000);
+							networkText.documentsB.animate({x: 200, y: 220, easing: "<>"}, 1000);
+							networkDiag.documents.animate({cx: 200, cy: 150, easing: "<>"}, 1000);
+							networkText.motivations.animate({y: 208, easing: "<>"}, 1000);
+							networkText.motivationsB.animate({y: 228, easing: "<>"}, 1000);
+							networkDiag.motivations.animate({cy: 150, easing: "<>"}, 1000);
+							networkText.modeling.animate({x: 480, y: 200, easing: "<>"}, 1000);
+							networkText.modelingB.animate({x: 480, y: 220, easing: "<>"}, 1000);
+							networkDiag.modeling.animate({cx: 480, cy: 150, easing: "<>"}, 1000);
+							networkText.design.animate({x: 620, y: 200, easing: "<>"}, 1000);
+							networkText.designB.animate({x: 620, y: 220, easing: "<>"}, 1000);
+							networkDiag.design.animate({cx: 620, cy: 150, easing: "<>"}, 1000);
+							networkText.CV.animate({x: 340, y: 325, easing: "<>"}, 1000);
+							networkDiag.CV.animate({cx: 340, cy: 285, r: 12, easing: "<>"}, 1000);
+							A1.animate(attrA, 500);
+							A2.animate(attrA, 500);
+							A3.animate(attrA, 500);
+							A4.animate(attrA, 500);
+							A5.animate(attrA, 500);
+							A6.animate(attrA, 500);
+                            A6A.animate({path: "M 250 145 L 245 150 L 250 155 L 235 150 z"}, 2800);
+                            A6B.animate({path: "M 245 150 L 315 150"}, 2800);
+							A7.animate(attrA, 500);
+							A8.animate(attrA, 500);
+							networkDiag.home.animate(attrInvis,500);
+							networkDiag.home.hide();
+							networkText.home.hide();
+						}
+                        else {
+							networkText.research.animate({x: 120, y: 80, easing: "<>"}, 1000);
+							networkText.researchB.animate({x: 120, y: 100, easing: "<>"}, 1000);
+							networkDiag.research.animate({cx: 120, cy: 40, easing: "<>"}, 1000);
+							networkText.documents.animate({x: 230, y: 80, easing: "<>"}, 1000);
+							networkText.documentsB.animate({x: 230, y: 100, easing: "<>"}, 1000);
+							networkDiag.documents.animate({cx: 230, cy: 40, easing: "<>"}, 1000);
+							networkText.motivations.animate({y: 110, easing: "<>"}, 1000);
+							networkText.motivationsB.animate({y: 130, easing: "<>"}, 1000);
+							networkDiag.motivations.animate({cy: 70, easing: "<>"}, 1000);
+							networkText.modeling.animate({x: 450, y: 80, easing: "<>"}, 1000);
+							networkText.modelingB.animate({x: 450, y: 100, easing: "<>"}, 1000);
+							networkDiag.modeling.animate({cx: 450, cy: 40, easing: "<>"}, 1000);
+							networkText.design.animate({x: 560, y: 80, easing: "<>"}, 1000);
+							networkText.designB.animate({x: 560, y: 100, easing: "<>"}, 1000);
+							networkDiag.design.animate({cx: 560, cy: 40, easing: "<>"}, 1000);
+							networkText.CV.animate({x: 640, y: 80, easing: "<>"}, 1000);
+							networkDiag.CV.animate({cx: 640, cy: 40, r: 12, easing: "<>"}, 1000);
+							A1.animate(attrInvis, 500);
+							A2.animate(attrInvis, 500);
+							A3.animate(attrInvis, 500);
+							A4.animate(attrInvis, 500);
+                            <!-- A4.animate({path: "M 340 160 L 300 275"}, 4200); -->
+							A5.animate(attrInvis, 500);
+							A6.animate(attrInvis, 500);
+
+                            A6A.animate({path: "M 260 45 L 255 50 L 260 55 L 245 50 z"}, 2800);
+                            A6B.animate({path: "M 255 50 L 300 50"}, 2800);
+							A7.animate(attrInvis, 500);
+							A8.animate(attrInvis, 500);
+							networkDiag.home.show();
+							networkText.home.show();
+							networkDiag.home.animate(attr, 500);
+							networkText.home.animate(attrT, 500);
+							networkDiag.home.animate({"stroke-width": 1.5}, 500);
+							networkDiag.research.animate({fill: "#EEE"}, 2000);
+							networkDiag.motivations.animate({fill: "#777"}, 2000);
+							networkDiag.design.animate({fill: "#EEE"}, 2000);
+
+						}
+
+                    };
+             	})(networkDiag[state], state);
+
+                 (function (st, state) {
+                    st[0].style.cursor = "pointer";
+                    st[0].onmouseover = function () {
+                        current && networkDiag[state].animate({fill: "#B22", stroke: "#CCC"}, 500);
+                        networkText[state].attr({fill: "#311"});
+                        networkText[state+"B"] && networkText[state+"B"].show();
+                        st.toFront();
+                        <!-- R.safari(); -->
+                        current = state;
+                    };
+                    st[0].onmouseout = function () {
+                    	networkDiag[state].animate({fill: "#CCC", stroke: "#000"}, 500);
+                        networkText[state].attr({fill: "#666"});
+                        networkText[state+"B"] && networkText[state+"B"].hide();
+			            st.toFront();
+                        <!-- R.safari(); -->
+                    };
+					st[0].onclick = function () {
+						active && (document.getElementById(active).style.display = "");
+						current && (networkDiag[current].animate({fill: "#BBB", stroke: "#000"}, 500));
+						st.toFront();
+						<!-- R.safari(); -->
+						document.getElementById(state).style.display = "block";
+						active = state;
+
+                        if(state == "home") {
+							networkText.research.animate({x: 60, y: 200, easing: "<>"}, 1000);
+							networkText.researchB.animate({x: 65, y: 220, easing: "<>"}, 1000);
+							networkDiag.research.animate({cx: 60, cy: 150, easing: "<>"}, 1000);
+							networkText.documents.animate({x: 200, y: 200, easing: "<>"}, 1000);
+							networkText.documentsB.animate({x: 200, y: 220, easing: "<>"}, 1000);
+							networkDiag.documents.animate({cx: 200, cy: 150, easing: "<>"}, 1000);
+							networkText.motivations.animate({y: 208, easing: "<>"}, 1000);
+							networkText.motivationsB.animate({y: 228, easing: "<>"}, 1000);
+							networkDiag.motivations.animate({cy: 150, easing: "<>"}, 1000);
+							networkText.modeling.animate({x: 480, y: 200, easing: "<>"}, 1000);
+							networkText.modelingB.animate({x: 480, y: 220, easing: "<>"}, 1000);
+							networkDiag.modeling.animate({cx: 480, cy: 150, easing: "<>"}, 1000);
+							networkText.design.animate({x: 620, y: 200, easing: "<>"}, 1000);
+							networkText.designB.animate({x: 620, y: 220, easing: "<>"}, 1000);
+							networkDiag.design.animate({cx: 620, cy: 150, easing: "<>"}, 1000);
+							networkText.CV.animate({x: 340, y: 325, easing: "<>"}, 1000);
+							networkDiag.CV.animate({cx: 340, cy: 285, r: 12, easing: "<>"}, 1000);
+							A1.animate(attrA, 500);
+							A2.animate(attrA, 500);
+							A3.animate(attrA, 500);
+							A4.animate(attrA, 500);
+							A5.animate(attrA, 500);
+							A6.animate(attrA, 500);
+							A7.animate(attrA, 500);
+							A8.animate(attrA, 500);
+							networkDiag.home.animate(attrInvis,500);
+							networkDiag.home.hide();
+							networkText.home.hide();
+						}
+                        else {
+							networkText.research.animate({x: 120, y: 80, easing: "<>"}, 1000);
+							networkText.researchB.animate({x: 120, y: 100, easing: "<>"}, 1000);
+							networkDiag.research.animate({cx: 120, cy: 40, easing: "<>"}, 1000);
+							networkText.documents.animate({x: 230, y: 80, easing: "<>"}, 1000);
+							networkText.documentsB.animate({x: 230, y: 100, easing: "<>"}, 1000);
+							networkDiag.documents.animate({cx: 230, cy: 40, easing: "<>"}, 1000);
+							networkText.motivations.animate({y: 110, easing: "<>"}, 1000);
+							networkText.motivationsB.animate({y: 130, easing: "<>"}, 1000);
+							networkDiag.motivations.animate({cy: 70, easing: "<>"}, 1000);
+							networkText.modeling.animate({x: 450, y: 80, easing: "<>"}, 1000);
+							networkText.modelingB.animate({x: 450, y: 100, easing: "<>"}, 1000);
+							networkDiag.modeling.animate({cx: 450, cy: 40, easing: "<>"}, 1000);
+							networkText.design.animate({x: 560, y: 80, easing: "<>"}, 1000);
+							networkText.designB.animate({x: 560, y: 100, easing: "<>"}, 1000);
+							networkDiag.design.animate({cx: 560, cy: 40, easing: "<>"}, 1000);
+							networkText.CV.animate({x: 640, y: 80, easing: "<>"}, 1000);
+							networkDiag.CV.animate({cx: 640, cy: 40, r: 12, easing: "<>"}, 1000);
+							A1.animate(attrInvis, 500);
+							A2.animate(attrInvis, 500);
+							A3.animate(attrInvis, 500);
+							A4.animate(attrInvis, 500);
+							A5.animate(attrInvis, 500);
+							A6.animate(attrInvis, 500);
+							A7.animate(attrInvis, 500);
+							A8.animate(attrInvis, 500);
+							networkDiag.home.show();
+							networkText.home.show();
+							networkDiag.home.animate(attr, 500);
+							networkText.home.animate(attrT, 500);
+							networkDiag.home.animate({"stroke-width": 1.5}, 500);
+							networkDiag.research.animate({fill: "#EEE"}, 2000);
+							networkDiag.motivations.animate({fill: "#777"}, 2000);
+							networkDiag.design.animate({fill: "#EEE"}, 2000);
+
+						}
+					};
+                })(networkText[state], state);
+            }
+
+            };
+        </script>
+    </head>
+    <body>
+
+            <div id="header">
+             <p align="left">
+             <font size="5" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Jesse Thomas Palma</font>
+             </p>
+        </div>
+        <div id="canvas">
+            <div id="paper"></div>
+        </div>
+        <div id="home">
+             <div style="position: relative; top: 20px;">
+             <img src="/web/20210202224818im_/https://www.stwing.upenn.edu/~palma/jessetpalma.jpg" width="91" height="128" align="right" hspace="2" border="3"></div>
+             <p align="left">
+             <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+I enjoy constructing novel intelligent systems and solving difficult problems.<br><br>
+My domain application focuses have been in sustainability, weather, logistics, natural language understanding and quantifying uncertainty. I bring a diverse set of knowledge that includes transformer models, recurrent neural networks, linguistic theory, dynamical systems, graphical models, predictive models and mathematics of learning in the brain. My strengths are creativity, persistence and the ability to redesign and combine multiple ML methods to create more effective systems.
+<br><br>
+                    Prior, I worked as a Postdoctoral Research Scientist in <a href="https://www.bu.edu/csn/research/computational-neuroscience/" title="CompNet" target="_blank"> Computational Neuroscience</a> at <a href="http://www.bu.edu/" title="BU" target="_blank">BU</a><br>
+                    as part of the Neuromorphics Lab and in collaboration with the robotics startup <a href="http://www.neurala.com/" title="Neurala" target="_blank">Neurala</a>.<br>
+                    As PI, I created a novel learning system that symbiotically learns both whole patterns rapidy and orthogonal sub-patterns slowly, patented for robotic vision.<br><br>
+                    I worked with <a href="https://en.wikipedia.org/wiki/Stephen_Grossberg" title="Steve" target="_blank">Stephen Grossberg</a> as my advisor for my PhD at Boston University, on modulation of reverberant memories in cortical circuits.
+                    <br><br>
+                    Additonally, I spend a lot of personal time in mathematics, game design, soccer and language studies.
+                    </font>
+             </p>
+        </div>
+        <div id="documents">
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#AA3333">
+                    Documents </font>
+             </p>
+ 
+        </div>
+        <div id="research">
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    Math & Games </font>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#773333">
+                    "When you play a game, you find out <br>what it is you should have been thinking about" </font><br>
+                    <font size="3" face="Verdana, Arial, Helvetica, sans-serif" color="#773333"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;  - John Conway </font>
+             </p>
+
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Mancala <br><br> </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    The game of mancala had a significant impact on me as a child. <br> 
+                    It is a quite simple game: <br>
+                    Count out stones around in a circle, and try to get the most in your pot at one end.<br><br>
+                    Of course, there are a few more rules - but these were a matter of convention.<br>
+                    What intrigued me was how a couple different rules led to very different games.<br>
+                    The strageies were different and the patterns of stone distributions that formed were different.<br><br>
+                    I wanted to play with a different set of rules almost every time.<br>
+                    Unbeknownst to me at the time, this was a seed for lifelong fascination with patterns and game design.
+                    <br>
+                    <br>
+             </p>             
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    2014 Numbers & Games Presentation <br><br> </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    A quirky talk on my mathematical tendencies and projects outside of technology and science proper <br> <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-WEKdNB6n9g" frameborder="10"></iframe>
+                    <br>
+             </p>
+
+        </div>
+        <div id="motivations">
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    Motivations </font>
+             </p>
+             <p align="justify">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    <br/><br/><br/>
+
+                    <p align="left">
+                          <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                          Human </font></p>
+
+                    <br/><br/>
+                    The world is intricate and beautiful, and to me, humans the most fascinating among it. <br><br>
+                    The mind of the individual, how it grows, learns, sleeps, remembers and dreams, has fueled my studies. <br>
+                    And the behaviors of community, how we communicate <br>
+                       and how we can cooperate with each other to accomplish more, has compelled my work. <br><br>
+                    The desire to build a better world around us and sustain humanity has driven me further. <br>
+                    Hopeful for more adventures to come.
+                    </font>
+             </p>
+        </div>
+        <div id="modeling">
+            <p align="left">
+                          <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                          Neural Processing</font></p>
+
+                    I studied the dynamics of neural codes and learning in biologically plausible network models of spiking neurons
+                    to understand how memory stability can overcome the interference in distributed representations and enable compressed hierarchical memories.
+                    <br/><br/>
+                    Are neural oscillations a means for the brain to resolve interference by regulating types of learning?
+                    Is there an interdependence between the beneficial process of pattern matching and the evolved laminar circuitry of cortex?
+                    What role does sleep play in the oscillatory regulation of this circuitry and interference management?
+                    <br/><br/>
+                    My graduate work has been on constructing dynamical systems from current neurophysiological findings,
+                    I analyze their behavior computationally with <a href="https://web.archive.org/web/20210202224818/http://www.mathworks.com/" title="MATLAB" target="_blank">MATLAB</a>,
+                    <a href="https://web.archive.org/web/20210202224818/http://www.mathworks.com/" title="SIMULINK" target="_blank">Simulink</a>,
+                    and <a href="https://web.archive.org/web/20210202224818/http://cns.bu.edu/nl/software.html" title="Kinness" target="_blank">KINNESS</a>
+                    to theorize about spiking neural architectures of cortex and contribute toward resolving these compelling questions.
+
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Symbiotic Fast and Slow Learning</font>
+             </p>
+             <p align="justify">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    In my recent postdoctoral project, I conceived and implemented a novel learning design.
+                    The approach combines principles of Adaptive Resonance Theory and sparsing coding to produce a system that
+                    performs both whole-pattern fast learning and slower part-based learning for memory compression in shared network representations.
+                    This work also examines how memory stability might overcome the risks caused by interference in distributed representations.
+                    The method is in the process of submission for provisional patent by Neurala.
+                    <br/><br/>
+                    </font>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Acetylcholine and AHP Currents: Impact on Transfer Functions</font>
+             </p>
+             <p align="justify">
+                    <img src="/web/20210202224818im_/https://www.stwing.upenn.edu/~palma/CaDynamicsWeb.jpg" width="184" height="292" align="right" hspace="6" style="border: 2px #888888 solid">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    My dissertion under <a href="https://en.wikipedia.org/wiki/Stephen_Grossberg" title="Steve" target="_blank">Stephen Grossberg</a>
+                    and <a href="http://www.maxversace.com/" title="Max" target="_blank">Max Versace</a>
+                    examines the function of the neurotransmitter acetylcholine (ACh) and after-hyperpolarization (AHP) currents in cortical networks.
+                    <br/><br/>
+                    Our spiking neuron model matches physiological properties of a breadth of AHP currents
+                    observed in mammalian neocortices and characterizes their dependence on behavioral ACh concentration changes
+                    and their underlying calcium mechanism (sketch of model neuron at right).
+                    The simulations demonstrate how their collective state controls the shape of neuron transfer functions
+                    and explain why these state changes are pivotal for stimuli processing and memory formation.
+                    </font>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#555555"><br/>
+                    <br/>
+                    Palma, J., Versace, M., and Grossberg, S. (2011).
+                    After-hyperpolarization Currents and Acetylcholine Control Sigmoid Transfer Functions in a Spiking Cortical Model.
+                    <em>Journal of Computational Neuroscience</em>. DOI: 10.1007/s10827-011-0354-8.</font>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#992222"><br/>
+                    <a href="https://web.archive.org/web/20210202224818/http://link.springer.com/article/10.1007%2Fs10827-011-0354-8" title="AHP Paper" target="_blank">Read the Article</a>
+                    </font>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Cholinergic Modulation of Short-term Memory in Thalamocortical Circuits</font>
+             </p>
+             <p align="justify">
+                    <img src="/web/20210202224818im_/https://www.stwing.upenn.edu/~palma/CircuitsWeb.jpg" width="182" height="186" align="left" hspace="6" style="border: 2px #888888 solid">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    The second phase of this work addresses the impact of cholinergic signals in the context of thalamocortical circuitry as a vigilance signal.
+                    Recurrent spiking networks with realistic cortical parameters exhibit persistent activity and oscillations.
+                    The project shows that cholinergic innervation from the basal forebrain controls the duration and form of pattern maintenence in these cortical circuits.
+                    Such modulation can regulate memory specificity during learning
+                    by shifting the processing mode of target populations in a context-sensitive manner.
+                    </font>
+                    <br/>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#555555"><br/>
+                    Palma, J., Grossberg, S., and Versace, M. (2012).
+                    Persistence and storage of activity patterns in spiking recurrent cortical networks: modulation of sigmoid signals by after-hyperpolarization currents and acetylcholine.
+                    <em>Journal of Computational Neuroscience</em>. DOI: 10.1007/s10827-011-0354-8.</font>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    <a href="https://web.archive.org/web/20210202224818/http://journal.frontiersin.org/Journal/10.3389/fncom.2012.00042/full" title="STM Paper" target="_blank">Read the article</a></font>
+                    </p>
+
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    Modeling: Computation and Code </font>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333"><br/>
+                    Neuromorphics Simulink Library, aka 'Palma Libs', <br/>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#333333"> A Simulink Library for Spiking Neural Networks, Shunting Neural Networks, Learning Laws and Analysis </font><br/>
+                    <br/>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#333333"> Download at </font>
+                    <a href="https://web.archive.org/web/20210202224818/https://github.com/pussinboot/PalmaLib" title="Palma Libs" target="_blank"> github.com/pussinboot/PalmaLib </a>
+                    <br/><br/>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#333333"> Developers: Jesse Palma and Leo Shapiro </font><br/>
+             </p>
+
+            <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Dissertation </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><br/>
+                    <br/>
+                    Sigmoid Signaling and Pattern Processing by Spiking Cortical Networks:<br/>
+                    <em>Modulation by After-hyperpolarization Currents and Acetylcholine</em>. (February 2012)</font>
+                    <br><br>
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    White Paper </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><br/>
+                    <br/>
+                    Logistics Through a Deep Learning Lens (October 2015)</font><br/>
+                    <a href="https://web.archive.org/web/20210202224818/http://deeplearning.weft.io/">Download at deeplearning.weft.io</a>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#000000" <br/><br/>
+                    Academic Papers and Presentations</font><br/>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><br/>
+                    Palma, J., Gorshechnikov, A., Luzanov, Y. Versace, M. Symbiotic fast and slow learning in hierarchical cortical circuits. <em>In prep.</em><br/>
+                    <br/>
+                    Grossberg, S., Versace, M., Palma, J. A Shared Brain Design for Learning and Choice in
+                    Cognitive and Motor Systems: Decision Making by Resonant Attention. <em>In prep.</em><br/>
+                    <br/>
+                    Palma, J., Grossberg, S., and Versace, M. (2012).
+                    Persistence and storage of activity patterns in spiking recurrent cortical networks: modulation of sigmoid signals by after-hyperpolarization currents and acetylcholine.
+                    <em>Frontiers in Computational Neuroscience</em>. DOI: 10.3389/fncom.2012.00042.</font><br/>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    <a href="https://web.archive.org/web/20210202224818/http://journal.frontiersin.org/Journal/10.3389/fncom.2012.00042/full" title="STM Paper" target="_blank">View at Frontiers</a></font>
+                    <br/><br/>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">Palma, J., Versace, M., and Grossberg, S. (2012).
+                    After-hyperpolarization Currents and Acetylcholine Control Sigmoid Transfer Functions in a Spiking Cortical Model.
+                    <em>Journal of Computational Neuroscience</em>. DOI: 10.1007/s10827-011-0354-8.</font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#992222"><br/>
+                    <a href="https://web.archive.org/web/20210202224818/http://link.springer.com/article/10.1007%2Fs10827-011-0354-8" title="AHP Paper" target="_blank">View at JCN</a>
+                    </font>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000"><br/>
+                    <br/>
+                    Palma, J., Versace, M., and Grossberg, S. (2011) After-hyperpolarization Currents and Calcium Dynamics Control Sigmoid Transfer Functions in Spiking Cortical Networks.
+                    <em>ICCNS 2011</em>, Boston, MA, USA. (Talk)<br/>
+                    <a href="https://web.archive.org/web/20210202224818/http://cns-web.bu.edu/cns-meeting/conference.html" title="ICCNS" target="_blank">Conference Website</a>
+                    <br/>
+                    <br/>
+                    Palma, J., Versace, M., and Grossberg, S. (2009) After-hyperpolarization Currents Control Sigmoid Transfer Functions in Spiking Cortical Networks.
+                    <em>ICCNS 2009</em>, Boston, MA, USA. (Poster)<br/><br/>
+                    </font>
+            </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Additional Work </font>
+                    <font size="1" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    <br/><br/>
+                    Evolving Minds: Genetic Evolution of Pulsed Neural Network Agents in a Simulated Survival Environment (2003)<br/>
+                    <em>Honors Thesis</em>, University of Pennsylvania </font>
+            </p>
+
+        </div>
+        <div id="design">
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#AA3333">
+                    Design  </font>
+             </p>
+
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Web Design </font>
+             </p>
+             <p align="justify">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    I designed and developed the website for the artist Kathleen Cammarata.
+                    <br>Please take a look:
+                    <br>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    <a href="https://web.archive.org/web/20210202224818/http://www.kcammarata.com/" title="Kathleen Cammarata" target="_blank">www.kcammarata.com</a>
+                    </font>
+                    <br>...and, not surprisingly, I also designed this site
+             </p>
+             <p align="justify">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Game Design </font>
+             </p>
+             <p align="justify">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Additionally, I have been a game developer. A short description of one project:
+                    <br><br>
+                    <img src="/web/20210202224818im_/https://www.stwing.upenn.edu/~palma/SeedsGameWeb.jpg" width="100" height="142" align="left" hspace="6" style="border: 0px #888888 solid">
+                    <em> The Neu Shah </em><br>
+                    This is a long-term project for a semi-cooperative semi-competitive game in which participants struggle
+                    for survival and spiritual transcendence through a semi-imaginary and semi-historical human evolution.
+                    It unfolds with an emphasis on both educational and creative processes, and has the unusual features of a varying illumination of the board, novel piece movement and non-turn based group play.
+                    The earliest version (1998) was a more typical development-based world domination game, much like <em>Civilizations</em>, titled <em> Imperium</em>.
+             </p>
+        </div>
+
+        <div id="connections">
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#992222">
+                    Connections </font>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Affliations </font><font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#666666">
+                    (Current and Past) </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    <br><br>
+                    Computational Neuroscience, Boston University<br>
+                    <a href="https://www.bu.edu/csn/research/computational-neuroscience/" title="compnet" target="_blank">compnet.bu.edu</a>
+                    <br><br>
+                    Neuromorphics Lab, Boston University
+                    <br><br>
+                    Neurala<br>
+                    <a href="http://neurala.com/" title="neurala" target="_blank">neurala.com</a>
+                    <br><br>
+                    Cognitive and Neural Systems, Boston University<br>
+                    <a href="http://cns.bu.edu/" title="cns" target="_blank">cns.bu.edu</a>
+                    <br><br>
+                    CELEST, Center of Excellence for Learning in Education, Science and Technology<br>
+                    <a href="https://www.brains-minds-media.org/archive/153/" title="celest" target="_blank">celest.bu.edu</a>
+                    <br><br>
+                    The MITRE Corporation<br>
+                    <a href="https://www.mitre.org/" title="mitre" target="_blank">www.mitre.org</a>
+                    <br><br>
+                    Institute for Research in Cognitive Science<br>
+                    <a href="https://www.thedp.com/article/2016/04/institute-for-research-in-cognitive-science" title="ircs" target="_blank">www.ircs.upenn.edu</a>
+                    <br><br>
+                    STWing, University of Pennsylvania<br>
+                    <a href="https://kcech.house.upenn.edu/content/science-and-technology-wing-stwing" title="stwing" target="_blank">stwing.upenn.edu</a>
+                    </font>
+             </p>
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333"><br/>
+                    Friends </font>
+             </p>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    David Glowacki, Scientist and Artist <br>
+                    <a href="https://glow-wacky.com/about/" title="David Glowacki" target="_blank">glow-wacky.com</a>
+                    <br><br>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Kathleen Cammarata, Painter and Printmaker <br>
+                    <a href="https://www.kcammarata.com/" title="Kathleen Cammarata" target="_blank">www.kcammarata.com</a>
+                    <br><br>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Frank Thoms, Author of <em>Teaching from the Middle of the Room</em> <br>
+                    <a href="https://frankthoms.com/" title="Frank Thoms" target="_blank">frankthoms.com</a>
+                    <br><br>
+                    Living Sound Entertainment, Recording Studios <br>
+                    <a href="https://www.lseintl.com/" title="LSE" target="_blank">www.lseintl.com</a>
+                    </font>
+             </p>
+        </div>
+        <div id="CV">
+             <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#999999">
+                    Curriculum Vitae </font>
+             </p>
+             <p align="left">
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    <br/>Last updated November 2015:<br/>
+                    <a href="/JesseTPalma_CV.pdf" title="JTP CV" target="_blank">Download the PDF </a></font>
+             </p>
+        </div>
+    </body>
+</html>
