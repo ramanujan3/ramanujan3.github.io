@@ -94,11 +94,11 @@
 			var A7 = R.set();
             var A8 = R.set();
             A1.push(R.path("M 335 65 L 340 60 L 345 65 L 340 50 z").attr(attrA),
-          				R.path("M 340 60 L 340 115").attr(attrA));
+          				R.path("M 340 60 L 340 100").attr(attrA));
             A2.push(R.path("M 335 65 L 340 60 L 345 65 L 340 50 z").attr(attrA),
-          				R.path("M 340 60 L 340 115").attr(attrA));
+          				R.path("M 340 60 L 340 100").attr(attrA));
 			A3.push(R.path("M 335 65 L 340 60 L 345 65 L 340 50 z").attr(attrA),
-          				R.path("M 340 60 L 340 115").attr(attrA));
+          				R.path("M 340 60 L 340 100").attr(attrA));
 
          	A4A = R.path("M 335 265 L 340 260 L 345 265 L 340 250 z").attr(attrA);
             A4B = R.path("M 340 260 L 340 275").attr(attrA);
@@ -209,7 +209,7 @@
             var active = "home";
             document.getElementById(active).style.display = "block";
             document.getElementById("home").style.top = "54%";
-            document.getElementById("home").style.height = "300px";
+            document.getElementById("home").style.height = "340px";
             for (var state in networkDiag) {
                 networkDiag[state].color = "#B22";
                 networkText[state].color = "#000";
@@ -267,6 +267,8 @@
 							A7.animate(attrA, 500);
 							A8.animate(attrA, 500);
 
+                            A4A.animate({path: "M 335 195 L 340 190 L 345 195 L 340 180 z"}, 1000);
+                            A4B.animate({path: "M 340 190 L 340 275"}, 1000);
                             A6A.animate({path: "M 250 145 L 245 150 L 250 155 L 235 150 z"}, 800);
                             A6B.animate({path: "M 245 150 L 315 150"}, 800);
                             A7A.animate({path: "M 430 145 L 435 150 L 430 155 L 445 150 z"}, 800);
@@ -307,6 +309,8 @@
 							A7.animate(attrInvis, 500);
 							A8.animate(attrInvis, 500);
 
+                            A4A.animate({path: "M 335 135 L 340 130 L 345 135 L 340 120 z"}, 1000);
+                            A4B.animate({path: "M 340 130 L 340 165"}, 1000);
                             A6A.animate({path: "M 270 45 L 265 50 L 270 55 L 255 50 z"}, 800);
                             A6B.animate({path: "M 265 50 L 300 50"}, 800);
                             A7A.animate({path: "M 410 45 L 415 50 L 410 55 L 425 50 z"}, 800);
@@ -462,10 +466,52 @@ My domain application focuses have been in sustainability, weather, logistics, n
         </div>
         <div id="documents">
              <p align="left">
-                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#AA3333">
+                    <font size="5" face="Verdana, Arial, Helvetica, sans-serif" color="#AA3333">
                     AI & Machine Learning </font>
              </p>
- 
+              <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Fortuitous Beginnings <br><br> </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    The founding of event of artificial intelligence is widely considered to be the Dartmouth Workshop of 1956. <br>
+                    It was run by Minksy and McCarthy with a small group of notable researchers Shannon, Nash, and Oliver Selfridge. <br>
+                    A year later also at Dartmouth, Stephen Grossberg began his studies applying differential equations to neural networks. <br>  <br> 
+                    Much later, I was born and grew up around Dartmouth College. <br>
+                    Later still, I had the fortune of discussing my own ideas about neural networks with Oliver Selfridge. <br>
+                    After several meetings, he kindly wrote me a recommendation for graduate school.<br>
+                    And I would do my graduate work with Steve Grossberg. <br><br>
+                    I did not notice the Dartmouth connection until even later. <br>
+                    In retrospect, I can not help but feel that my involvement in AI started with a bit of fortune.<br>
+                    <br>
+                    <br>
+             </p>   
+              <p align="left">
+                    <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#333333">
+                    Evolving Minds <br><br> </font>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif" color="#000000">
+                    Upon graduating from high school, I was hired as a software intern in Pascal.<br>
+                    That summer before college, I build a visual tool for building and editing networks of fuzzy logic relations and <br>
+                    a genetic algorithm that could optimize any variable by tuning others that directly and indirectly influenced it. <br>
+                    The work was funded by NIMA (National Imagery and Mapping Agency).<br>
+                    In a summer, I learned a new programming language and <br>about evolutionary programming, optimization, fuzzy logic, user interfaces and much more.<br>
+                    Seeds were planted. <br>
+                    <br><br>
+                    As I entered college, my interest in evolutionary methods persisted, but I also discovered neural networks. <br>
+                    Intrigued, I bought a newly published book Pulsed Neural Networks by Wolfgang Maass and Christopher Bishop. <br>
+                    <br>
+                    Combining the ideas together, I started a project which I called "Evolving Minds". <br>
+                    I build a simulated evolutionary environment for spiking neural networks.<br>
+                    Virtual agents moved and sensed their surroundings, based on the pulsing of their individual neural networks. <br>
+                    They needed to eat sufficient food and avoid posion to survive, <br>
+                    and needed find a mate of the opposite gender to pass on their genetic information. <br>
+                    Specified as strings of 0-1 floating points, their genetics determined the network connectivity and hyperparameters. <br><br>
+
+                    The agents evolved learn sequential behaviors, reacted to stimuli and become adept at finding food and a mate, <br>
+                    albeit after months of balancing mcuh of the system, such environmental time constants. <br>
+                    All build with C++ and OpenGL, the project became my undergraduate thesis. <br>
+                    <br><br>
+             </p>   
+
         </div>
         <div id="research">
              <p align="left">
@@ -699,7 +745,7 @@ My domain application focuses have been in sustainability, weather, logistics, n
         <div id="design">
              <p align="left">
                     <font size="4" face="Verdana, Arial, Helvetica, sans-serif" color="#AA3333">
-                    Language, Logic, Interpretation </font>
+                    Language & Interpretation </font>
              </p>
 
              <p align="left">
